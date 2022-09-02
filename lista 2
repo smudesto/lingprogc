@@ -64,12 +64,49 @@ else
 printf("Não é divisível por 3 e por 7");*/
 
 //6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário bruto. Faça um programa em linguagem C que permita entrar com o salário bruto e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
+/*float salario, prestacao;
+printf("Digite o salario bruto: ");
+scanf("%f", &salario);
+printf("Digite o valor da prestacao: ");
+scanf("%f", &prestacao);
+if (prestacao < (salario*30/100))
+printf("emprestimo pode ser concedido.");
+else
+printf("emprestimo nao pode ser concedido.");*/ 
 
 //7. Faça um programa que leia um número e indique se o número está compreendido entre 20 e 50 ou não.
+/*int num;
+printf("Digite um numero: ");
+scanf("%d", &num);
+if ((num >= 20) && (num <= 50))
+printf("Numero esta compreendido entre 20 e 50.");
+else
+printf("Numero nao esta compreendido entre 20 e 50.");*/ 
 
 //8. Faça um programa que leia um número e imprima uma das mensagens: "Maior do que 20", "Igual a 20"ou "Menor do que 20".
+/*int num;
+printf("Digite um numero: ");
+scanf("%d", &num);
+if (num > 20)
+printf("Numero maior do que 20.");
+else
+if (num == 20)
+printf("Numero igual a 20.");
+else
+if (num < 20)
+printf("Numero menor que 20.");*/ 
 
 //9. Faça um programa que permita entrar com o ano de nascimento da pessoa e como ano atual. O programa deve imprimir a idade da pessoa. Não se esqueça de verificar se o ano de nascimento informado é válido.
+/*int atual, nasc, idade;
+printf("Digite o ano atual: ");
+scanf("%d", &atual);
+printf("Digite o ano de nascimento: ");
+scanf("%d", &nasc);
+if (( nasc <= 1900) && (nasc >= 2022))
+printf("Ano de nascimento nao é válido.");
+else
+idade = atual - nasc;
+printf("Idade: %d", idade);*/ 
 
 //10. Faça um programa que leia três números inteiros e imprima os três em ordem crescente.
 
@@ -79,8 +116,34 @@ printf("Não é divisível por 3 e por 7");*/
 //• Se é maior de idade
 //• Se é menor de idade
 //• Se é maior de 65 anos
+/*int idade;
+printf("Digite a idade: ");
+scanf("%d",&idade);
+if (idade < 18)
+printf("C	 menor de idade.");
+else if((idade >= 18) && (idade <= 64))
+printf("C	 maior de idade.");
+else if
+(idade >= 65)
+printf("C	 maior de 65 anos.");*/ 
 
 //13. Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota da prova 2 de umaluno. O programa deve imprimir o nome, a nota da prova 1, a nota da prova 2, a média das notas e uma das mensagens: "Aprovado", "Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para reprovação e as demais em prova final).
+  char nome;
+float notap1, notap2;
+printf ("Digite seu nome: ");
+scanf ("%c", &nome);
+printf ("Digite a nota da prova 1: ");
+scanf ("%f", %notap1);
+printf ("Digite a nota da prova 2: ");
+scanf ("%f", %notap2);
+float media = (notap1 + notap2)/2;
+printf("Nome do aluno: %c", nome; "Nota da prova 1: %f", notap1; "Nota da prova 2: %f", notap2;)
+if media => 7 
+printf("Aprovado");
+else if media < 3
+printf("Reprovado");
+else if media >= 3.1 && media <= 6.9
+printf("Prova final");
 
 //14. Faça um programa que permita entrar com o salário de uma pessoa e imprima o desconto do INSS segundo a tabela seguir:
 //Salário Faixa de Desconto
