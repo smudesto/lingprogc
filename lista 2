@@ -109,8 +109,44 @@ idade = atual - nasc;
 printf("Idade: %d", idade);*/ 
 
 //10. Faça um programa que leia três números inteiros e imprima os três em ordem crescente.
+/*int main() {
+    int n1, n2, n3;
+printf("Digite o primeiro numero: ");
+scanf("%d",&n1);
+printf("Digite o segundo numero: ");
+scanf("%d",&n2);
+printf("Digite o terceiro numero: ");
+scanf("%d",&n3);
+if (n1 < n2 && n1 < n3) {
+if (n2 < n3)
+printf("%d, %d, %d", n1, n2, n3);
+else
+printf("%d, %d, %d", n1, n3, n2);
+}
+else if (n2 < n1 && n2 < n3) {
+if (n1 < n3)
+printf("%d, %d, %d", n2, n1, n3);
+else
+printf("%d, %d, %d", n2, n3, n1);*/
 
 //11. Faça um programa que leia 3 números e imprima o maior deles.
+/*int x, y, z; 
+    
+    printf ("Digite um numero: ");
+    scanf("%d", &x);
+    printf("Digite outro numero: ");
+    scanf("%d", &y);
+    printf("Digite mais um numero: ");
+    scanf("%d", &z);
+    printf("\n\n");
+    
+    if (x > y && x > z) {
+        printf ("%d", x);
+    } else if (y > x && y > z) {
+        printf ("%d", y); 
+    } else {
+    printf("%d", z);
+    }*/
 
 //12. Faça um programa que leia a idade de uma pessoa e informe:
 //• Se é maior de idade
