@@ -110,6 +110,22 @@ printf("Média da turma: %f", medturma);
 //Salário menor que R$1300,00 Isento
 //Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 //Salário maior ou igual a R$2300,00 15% do salário bruto
+char nome;
+int i, salario;
+float aliq;
+for ( i= 1; i <= 10; i++) {
+    printf("Digite seu nome: ");
+    scanf("%c",&nome);
+    printf("Digite seu salário: ");
+    scanf("%d", &salario);
+    if(salario <= 1300){
+    printf("Isento do imposto de renda.");
+} else if (salario >= 1300 && salario <2300)
+    aliq = salario * (10/100);
+    printf("Valor da aliquota: ", aliq);
+}
+   return EXIT_SUCCESS;
+}
 
 //9. No dia da estréia do filme "Procurando Dory", uma grande emissora de TV realizou
 //uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
