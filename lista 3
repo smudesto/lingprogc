@@ -132,6 +132,38 @@ for ( i= 1; i <= 10; i++) {
 //• A quantidade de pessoas que responderamregular;
 //• A percentagem de pessoas que responderam bom entre todos os expectadores
 //analisados.
+int i, idade, excelente=0, bom=0, regular=0, opiniao;
+float media_idade=0, perc_bom;
+
+
+for (i = 1; i <= 20; i++) {
+
+    printf("Digite a idade: ");
+        scanf(" %d", &idade);
+    printf("Opinião sobre o filme: \n");
+    printf("1 - regular \n");
+    printf("2 - bom \n");
+    printf("3 - excelente \n");
+        scanf(" %d", &opiniao);
+    if (opiniao == 2)
+        bom++;
+        
+    if (opiniao == 1)
+        regular++;
+        
+    if (opiniao == 3) {
+        excelente++;
+        media_idade+= idade;
+    }
+}
+media_idade = media_idade/excelente;
+int todos = bom + regular + excelente;
+perc_bom = (float)bom/(float)todos;
+
+printf("A média das idades das pessoas que responderam excelente: %f \n", media_idade);
+printf("A quantidade de pessoas que responderam regular: %d \n", regular);
+printf("A percentagem de pessoas que responderam bom entre todos os expectadores: %.1f \n", perc_bom*100);
+
 
 //10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
 //que na lista oficial de cada país consta, além de outros dados, peso e idade de 12
