@@ -164,6 +164,26 @@ else if
 printf("C	 maior de 65 anos.");*/ 
 
 //13. Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota da prova 2 de umaluno. O programa deve imprimir o nome, a nota da prova 1, a nota da prova 2, a média das notas e uma das mensagens: "Aprovado", "Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para reprovação e as demais em prova final).
+float p1, p2, media;
+char nome[30];
+printf("Nome do aluno: ");
+scanf("%s", &nome);
+printf("Digite a nota da prova 1: ");
+scanf("%f",&p1);
+printf("Digite a nota da prova 2: ");
+scanf("%f",&p2);
+media = (p1 + p2) / 2;
+printf("-------------------------Dados-----------------------\n");
+printf("Aluno: %s \n", nome);
+printf("Notas - P1: %f P2: %f \n", p1, p2);
+printf("Media: %f \n", media);
+if (media >= 7)
+printf("Aprovado");
+else if (media >= 3)
+printf("Prova final");
+else
+printf("\nReprovado");
+
 
 
 //14. Faça um programa que permita entrar com o salário de uma pessoa e imprima o desconto do INSS segundo a tabela seguir:
@@ -173,8 +193,22 @@ printf("C	 maior de 65 anos.");*/
 //Maior que R$1200,00 e menor ou igual a R$2000,00 25%
 //Maior que R$2000,00 30%
 
+int salario;
+printf("Digite o salario: ");
+scanf("%d",&salario);
+if (salario <= 600)
+printf("Isento de INSS");
+else if (salario <= 1200)
+printf("20%: %.2f", salario * 0.2);
+else if (salario <= 2000)
+printf("25%: %.2f", salario * 0.25);
+else
+printf("30%: %.2f", salario * 0.3);
+
+
 
 //15. Um comerciante comprou umproduto e quer vendê-lo com umlucro de 45% se o valor da compra for menor que R$20,00, caso contrário, o lucro será de 30%. Faça um programa que leia o valor do produto e imprima o valor da venda.
+
 
 //16. A confederação brasileira de natação irá promover eliminatórias para o próximo mundial. Faça um programa que receba a idade de um nadador e imprima a sua categoria segundo a tabela a seguir:
 //Categoria Idade
