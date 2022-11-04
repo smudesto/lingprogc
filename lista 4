@@ -89,6 +89,14 @@ int main() {
 
     //4. Faça um programa que armazene 8 números em um vetor e imprima todos os
     //números. Ao final, imprima o total de números múltiplos de seis.
+     void main(){
+        int i, lista[8];
+        for (i=0, i<8, i++){
+            printf("Informe um numero: \n");
+            scanf
+        }
+    }
+    
 
     //5. Faça um programa que armazene as notas das provas 1 e 2 de 15 alunos. Calcule
     //e armazene a média arredondada. Armazene também a situação do aluno: 1-
