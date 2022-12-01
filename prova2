@@ -30,14 +30,15 @@ int main() {
 
     /*4. Faça um programa que leia o saldo e o % de reajuste de uma aplicação financeira
          e imprimir o novo saldo após o reajuste. O cálculo deve ser feito por uma função. (2,5pt)*/
-     int saldo, reajuste, saldonovo;
+    int saldo, reajuste, saldonovo;
     printf("Informe o saldo: ");
-    scanf("%d", saldo);
+    scanf("%d", &saldo);
     printf("Informe a porcentagem de reajuste: ");
-    scanf("%d", reajuste);
+    scanf("%d", &reajuste);
     
-    saldonovo= saldo*(reajuste/100);
-    
+    while (saldo>=1)
+    {saldonovo==(saldo*(reajuste/100));
+}
     printf("Valor do saldo após o reajuste: ", saldonovo);
 
 
