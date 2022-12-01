@@ -16,7 +16,12 @@ int main() {
          permita que o usuário digite um número inteiro para ser buscado no vetor, se
          for encontrado o programa deve imprimir a posição desse número no vetor, caso
          contrário, deve imprimir a mensagem: "Nao encontrado!". (2,5pt)*/
-
+        for(i=1, i<= 15, i++)
+         printf("Informe um numero: ");
+         scanf("%d", num);
+         
+         if(num =! i)
+         printf("Não encontrado")
 
     /*2. Crie um programa que armazene dados inteiros em uma matriz de ordem 5 e
          imprima: Todos os elementos que se encontram em posições cuja linha mais
